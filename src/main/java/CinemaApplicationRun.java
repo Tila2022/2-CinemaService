@@ -2,17 +2,17 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CinemaApplicationRun extends Viewer {
-    Viewer viewer = new Viewer();
     Map<String, Integer> map = new HashMap<>();
+
     public void listLoading() {
         // name check
-        if (name == null) {
+        if (nickName == null) {
             System.out.println("(listLoading error) age == null");
             return;
         }
 
         // views check
-        if (views == null) {
+        if (count == null) {
             System.out.println("(averageAge error) age == null");
             return;
         }
@@ -24,8 +24,7 @@ public class CinemaApplicationRun extends Viewer {
         }
 
         for (int i = 0; i < 5; i++) {
-            map.put(name[i],views[i]);
+            map.put(nickName[i], count[i]);
         }
-
     }
 }
