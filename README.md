@@ -1,2 +1,2 @@
-# Cinema-Service
+# CinemaService
 Задание для сайта Intellekt-a.
